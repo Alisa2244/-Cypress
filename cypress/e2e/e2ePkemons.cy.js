@@ -1,8 +1,8 @@
 describe('Покупка премиума', function () {
-    it('Покупка аватара', function () {
+    it('Покупка премиума', function () {
          cy.visit('https://pokemonbattle.ru/login'); // Зайти на сайт
-         cy.get(':nth-child(1) > .auth__input').type('alisaandrianova2244@yandex.ru'); // Найти поле "Логин", ввести верный логин
-         cy.get('#password').type('Alisa2244'); // Найти поле "Пароль", ввести верный пароль
+         cy.get(':nth-child(1) > .auth__input').type('UserLogin'); // Найти поле "Логин", ввести верный логин
+         cy.get('#password').type('UserPassword'); // Найти поле "Пароль", ввести верный пароль
          cy.get('.auth__button').click(); //Нажать "Войти"
          cy.get('.header__container > .header__id').click(); // Перейти на страницу тренера
          cy.get('[href="/premium"]').click(); // Перейти на страницу "Покупка премиума"
