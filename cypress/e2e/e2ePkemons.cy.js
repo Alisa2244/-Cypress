@@ -1,5 +1,4 @@
 describe('Покупка премиума', function () {
-
     it('Покупка аватара', function () {
          cy.visit('https://pokemonbattle.ru/login'); // Зайти на сайт
          cy.get(':nth-child(1) > .auth__input').type('alisaandrianova2244@yandex.ru'); // Найти поле "Логин", ввести верный логин

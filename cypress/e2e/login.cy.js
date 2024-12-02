@@ -82,11 +82,9 @@ describe('Проверка авторизации', function () {
     }) 
 
     it('Верный пароль и логин с разным регистром', function () {
-        
         cy.get('#mail').type('GerMan@Dolnikov.ru'); // Найти поле "Логин", ввести логин с заглавными бкувами
         cy.get('#pass').type(data.password); // Найти поле "Пароль", ввести верный пароль
         cy.get('#loginButton').click(); //Нажать "Войти"
         cy.get('#messageHeader').contains('Авторизация прошла успешно'); // Проверка, что текст отображается
-        
     }) 
  })
